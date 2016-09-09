@@ -4,5 +4,6 @@ module Papa(
   module P
 ) where
 
+import Papa.Base as P
+import Papa.Include as P
 import Papa.Prelude as P
-import Papa.Lens as P

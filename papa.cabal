@@ -1,5 +1,5 @@
 name:               papa
-version:            0.0.1
+version:            0.1.0
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
@@ -27,8 +27,9 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa-lens >= 0.0.1 && < 0.1
-                    , papa-prelude >= 0.0.1 && < 0.1
+                    , papa-base >= 0.1.0 && < 0.2
+                    , papa-prelude >= 0.1.0 && < 0.2
+                    , papa-include >= 0.1.0 && < 0.2
                    
   ghc-options:
                     -Wall

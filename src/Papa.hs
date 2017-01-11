@@ -5,5 +5,6 @@ module Papa(
 ) where
 
 import Papa.Base as P
-import Papa.Include as P
-import Papa.Prelude as P
+import Papa.Bifunctors as P
+import Papa.Lens as P
+import Papa.Semigroupoids as P

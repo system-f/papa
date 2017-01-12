@@ -1,22 +1,22 @@
-name:               papa
-version:            0.1.0
+name:               papa-semigroupoids-implement
+version:            0.2.0
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
 maintainer:         Tony Morris
-copyright:          Copyright (c) 2016, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
-synopsis:           Reasonable default import
+copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
+synopsis:           useful `bifunctors` functions reimplemented
 category:           Prelude
-description:        Reasonable default import
-homepage:           https://github.com/data61/papa
-bug-reports:        https://github.com/data61/papa/issues
+description:        useful `bifunctors` functions reimplemented
+homepage:           https://github.com/data61/papa-semigroupoids-implement
+bug-reports:        https://github.com/data61/papa-semigroupoids-implement/issues
 cabal-version:      >= 1.10
 build-type:         Custom
 extra-source-files: changelog
 
 source-repository   head
   type:             git
-  location:         git@github.com:data61/papa.git
+  location:         git@github.com:data61/papa-semigroupoids-implement.git
 
 flag                small_base
   description:      Choose the new, split-up base package.
@@ -27,11 +27,8 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa-base >= 0.2.0 && < 1
-                    , papa-bifunctors >= 0.2.0 && < 1
-                    , papa-lens >= 0.2.0 && < 1
-                    , papa-semigroupoids >= 0.2.0 && < 1
-                   
+                    , semigroupoids >= 5 && < 6
+                    
   ghc-options:
                     -Wall
 
@@ -42,7 +39,8 @@ library
                     src
 
   exposed-modules:
-                    Papa
+                    Papa.Semigroupoids.Implement
+                    Papa.Semigroupoids.Implement.Data.Functor.Bind
                     
 test-suite doctests
   type:

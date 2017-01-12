@@ -20,7 +20,3 @@
 # ctags
 TAGS
 
-# cabal new-build
-/dist-newstyle
-/cabal.project.local
-

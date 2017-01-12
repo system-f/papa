@@ -1,0 +1,68 @@
+name:               papa-lens
+version:            0.2.0
+license:            BSD3
+license-file:       LICENSE
+author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
+maintainer:         Tony Morris
+copyright:          Copyright (c) 2016, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
+synopsis:           Prelude with only useful functions
+category:           Prelude
+description:        Prelude with only useful functions
+homepage:           https://github.com/data61/papa-lens
+bug-reports:        https://github.com/data61/papa-lens/issues
+cabal-version:      >= 1.10
+build-type:         Custom
+extra-source-files: changelog
+
+source-repository   head
+  type:             git
+  location:         git@github.com:data61/papa-lens.git
+
+flag                small_base
+  description:      Choose the new, split-up lens package.
+
+library
+  default-language:
+                    Haskell2010
+
+  build-depends:
+                    base >= 4.8 && < 5
+                    , papa-lens-export >= 0.2.0
+                    , papa-lens-implement >= 0.2.0
+                    
+  ghc-options:
+                    -Wall
+
+  default-extensions:
+                    NoImplicitPrelude
+
+  hs-source-dirs:
+                    src
+
+  exposed-modules:
+                    Papa.Lens
+                    
+test-suite doctests
+  type:
+                    exitcode-stdio-1.0
+
+  main-is:
+                    doctests.hs
+
+  default-language:
+                    Haskell2010
+
+  build-depends:
+                    base < 5 && >= 3
+                    , doctest >= 0.9.7
+                    , filepath >= 1.3
+                    , directory >= 1.1
+                    , QuickCheck >= 2.0
+                    , template-haskell >= 2.8
+
+  ghc-options:
+                    -Wall
+                    -threaded
+
+  hs-source-dirs:
+                    test

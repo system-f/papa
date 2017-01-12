@@ -1,0 +1,69 @@
+{-# LANGUAGE NoImplicitPrelude #-}
+
+module Papa.Base.Export.Data.List(
+  module P
+) where
+
+import Data.List as P(
+    null
+  , length
+  , reverse
+  , intersperse
+  , intercalate
+  , transpose
+  , subsequences
+  , permutations
+  , foldl
+  , foldl'
+  , foldr
+  , and
+  , or
+  , any
+  , all
+  , sum
+  , product
+  , mapAccumL
+  , mapAccumR
+  , replicate
+  , cycle
+  , take
+  , drop
+  , splitAt
+  , takeWhile
+  , dropWhile
+  , dropWhileEnd
+  , span
+  , break
+  , stripPrefix
+  , isPrefixOf
+  , isSuffixOf
+  , isInfixOf
+  , isSubsequenceOf
+  , elem
+  , notElem
+  , find
+  , partition
+  , lines
+  , words
+  , unlines
+  , unwords
+  , nub
+  , delete
+  , (\\)
+  , union
+  , intersect
+  , sort
+  , sortOn
+  , nubBy
+  , deleteBy
+  , deleteFirstsBy
+  , unionBy
+  , intersectBy
+  , sortBy
+  , insertBy
+  , genericLength
+  , genericTake
+  , genericDrop
+  , genericSplitAt
+  , genericReplicate
+  )

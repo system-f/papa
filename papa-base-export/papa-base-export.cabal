@@ -1,0 +1,88 @@
+name:               papa-base-export
+version:            0.2.0
+license:            BSD3
+license-file:       LICENSE
+author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
+maintainer:         Tony Morris
+copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
+synopsis:           Prelude with only useful functions
+category:           Prelude
+description:        Prelude with only useful functions
+homepage:           https://github.com/data61/papa-base-export
+bug-reports:        https://github.com/data61/papa-base-export/issues
+cabal-version:      >= 1.10
+build-type:         Custom
+extra-source-files: changelog
+
+source-repository   head
+  type:             git
+  location:         git@github.com:data61/papa-base-export.git
+
+flag                small_base
+  description:      Choose the new, split-up base package.
+
+library
+  default-language:
+                    Haskell2010
+
+  build-depends:
+                    base >= 4.8 && < 5
+                    
+  ghc-options:
+                    -Wall
+
+  default-extensions:
+                    NoImplicitPrelude
+
+  hs-source-dirs:
+                    src
+
+  exposed-modules:
+                    Papa.Base.Export
+                    Papa.Base.Export.Control.Applicative
+                    Papa.Base.Export.Control.Category
+                    Papa.Base.Export.Control.Monad
+                    Papa.Base.Export.Data.Bool
+                    Papa.Base.Export.Data.Char
+                    Papa.Base.Export.Data.Either
+                    Papa.Base.Export.Data.Eq
+                    Papa.Base.Export.Data.Foldable
+                    Papa.Base.Export.Data.Function
+                    Papa.Base.Export.Data.Functor
+                    Papa.Base.Export.Data.Int
+                    Papa.Base.Export.Data.List
+                    Papa.Base.Export.Data.List.NonEmpty
+                    Papa.Base.Export.Data.Maybe
+                    Papa.Base.Export.Data.Monoid
+                    Papa.Base.Export.Data.Ord
+                    Papa.Base.Export.Data.Ratio
+                    Papa.Base.Export.Data.Semigroup
+                    Papa.Base.Export.Data.String
+                    Papa.Base.Export.Data.Traversable
+                    Papa.Base.Export.Data.Void
+                    Papa.Base.Export.Prelude
+
+test-suite doctests
+  type:
+                    exitcode-stdio-1.0
+
+  main-is:
+                    doctests.hs
+
+  default-language:
+                    Haskell2010
+
+  build-depends:
+                    base < 5 && >= 3
+                    , doctest >= 0.9.7
+                    , filepath >= 1.3
+                    , directory >= 1.1
+                    , QuickCheck >= 2.0
+                    , template-haskell >= 2.8
+
+  ghc-options:
+                    -Wall
+                    -threaded
+
+  hs-source-dirs:
+                    test

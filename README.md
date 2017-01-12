@@ -1,3 +1,0 @@
-# `papa`
-
-All general libraries.

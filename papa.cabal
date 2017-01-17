@@ -1,5 +1,5 @@
 name:               papa
-version:            0.2.0
+version:            0.2.1
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
@@ -39,6 +39,8 @@ library
                     , papa-semigroupoids >= 0.2.0 && < 1
                     , papa-semigroupoids-export >= 0.2.0 && < 1
                     , papa-semigroupoids-implement >= 0.2.0 && < 1
+                    , papa-export >= 0.2.0 && < 1
+                    , papa-implement >= 0.2.0 && < 1
                    
   ghc-options:
                     -Wall

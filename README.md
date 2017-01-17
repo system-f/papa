@@ -8,6 +8,16 @@ sub-packages:
 Package dependency tree:
 
     papa
+      papa-export
+        papa-base-export
+        papa-bifunctors-export
+        papa-lens-export
+        papa-semigroupoids-export
+      papa-implement
+        papa-base-implement
+        papa-bifunctors-implement
+        papa-lens-implement
+        papa-semigroupoids-implement
       papa-base
         papa-base-export
         papa-base-implement

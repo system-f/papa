@@ -41,6 +41,7 @@ library
   exposed-modules:
                     Papa.Semigroupoids.Implement
                     Papa.Semigroupoids.Implement.Data.Functor.Bind
+                    Papa.Semigroupoids.Implement.Data.Semigroup.Foldable
                     
 test-suite doctests
   type:

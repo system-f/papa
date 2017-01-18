@@ -8,15 +8,15 @@ copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial R
 synopsis:           Useful base functions reimplemented
 category:           Prelude
 description:        Useful base functions reimplemented
-homepage:           https://github.com/data61/papa-base-implement
-bug-reports:        https://github.com/data61/papa-base-implement/issues
+homepage:           https://github.com/data61/papa
+bug-reports:        https://github.com/data61/papa/issues
 cabal-version:      >= 1.10
 build-type:         Custom
 extra-source-files: changelog
 
 source-repository   head
   type:             git
-  location:         git@github.com:data61/papa-base-implement.git
+  location:         git@github.com:data61/papa.git
 
 flag                small_base
   description:      Choose the new, split-up base package.

@@ -8,15 +8,15 @@ copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial R
 synopsis:           useful `bifunctors` functions reimplemented
 category:           Prelude
 description:        useful `bifunctors` functions reimplemented
-homepage:           https://github.com/data61/papa-semigroupoids-implement
-bug-reports:        https://github.com/data61/papa-semigroupoids-implement/issues
+homepage:           https://github.com/data61/papa
+bug-reports:        https://github.com/data61/papa/issues
 cabal-version:      >= 1.10
 build-type:         Custom
 extra-source-files: changelog
 
 source-repository   head
   type:             git
-  location:         git@github.com:data61/papa-semigroupoids-implement.git
+  location:         git@github.com:data61/papa.git
 
 flag                small_base
   description:      Choose the new, split-up base package.

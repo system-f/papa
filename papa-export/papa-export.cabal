@@ -8,15 +8,15 @@ copyright:          Copyright (c) 2016, Commonwealth Scientific and Industrial R
 synopsis:           Reasonable default import
 category:           Prelude
 description:        Reasonable default import
-homepage:           https://github.com/data61/papa-export
-bug-reports:        https://github.com/data61/papa-export/issues
+homepage:           https://github.com/data61/papa
+bug-reports:        https://github.com/data61/papa/issues
 cabal-version:      >= 1.10
 build-type:         Custom
 extra-source-files: changelog
 
 source-repository   head
   type:             git
-  location:         git@github.com:data61/papa-export.git
+  location:         git@github.com:data61/papa.git
 
 flag                small_base
   description:      Choose the new, split-up base package.

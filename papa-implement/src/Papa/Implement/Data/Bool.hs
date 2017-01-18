@@ -1,13 +1,33 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE FlexibleInstances #-}
 
-module Papa.Implement.Data.Bool where
+module Papa.Base.Implement.Data.Bool(
+  GetBool(..)
+, IsBool(..)
+, true
+, false
+, if'
+, ifB
+, (?.)
+, (?<>)
+, (?<*>)
+, (?@)
+, (!?.)
+, (!?<>)
+, (!?<*>)
+, (!?@)
+) where
 
-import Control.Category(Category(id))
-import Control.Lens
-import Data.Bool
-import Data.Monoid
-import Prelude hiding (id)
+import Control.Applicative(Applicative(pure), Const)
+import Control.Category(Category(id, (.)))
+import Control.Lens(Iso', Identity, Optic', Profunctor, Contravariant, Getter, (^.), from, view, iso, _Wrapped, to)
+import Data.Bool(Bool(False, True), bool)
+import Data.Eq(Eq((==)))
+import Data.Functor(Functor)
+import Data.Functor.Bind(Bind((>>-)))
+import Data.Maybe(maybe, Maybe(Nothing, Just))
+import Data.Monoid(Monoid(mempty), First(First), Last(Last), Dual, All, Any, Sum, Product)
+import Prelude(Double, Float, Word, Int, Integer, Num)
 
 class GetBool a where
   _GetBool ::
@@ -37,6 +57,7 @@ instance GetBool (Last ()) where
   _GetBool =
     to (\(Last x) -> maybe False (\() -> True) x)
 
+-- not exported
 cprogrammer :: 
   (Contravariant f, Profunctor p, Num a, Functor f, Eq a) =>
   Optic' p f a Bool
@@ -129,13 +150,13 @@ if' f t a =
   if a ^. _GetBool then t else f
 
 ifB ::
-  (GetBool a, Monad f) => -- todo use Bind, not Monad
+  (GetBool a, Bind f) =>
   f x
   -> f x
   -> f a
   -> f x
 ifB f t a =
-  a >>= if' f t
+  a >>- if' f t
 
 (?.) ::
   (Category c, IsBool a) =>

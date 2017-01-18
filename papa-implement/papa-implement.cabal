@@ -31,7 +31,8 @@ library
                     , papa-bifunctors-implement >= 0.2.0 && < 1
                     , papa-lens-implement >= 0.2.0 && < 1
                     , papa-semigroupoids-implement >= 0.2.0 && < 1
-                    , lens
+                    , semigroupoids >= 5 && < 6
+                    , lens >= 4 && < 5
                    
   ghc-options:
                     -Wall

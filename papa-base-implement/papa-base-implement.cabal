@@ -42,7 +42,6 @@ library
                     Papa.Base.Implement
                     Papa.Base.Implement.Control.Applicative
                     Papa.Base.Implement.Control.Monad
-                    Papa.Base.Implement.Data.Bool
                     Papa.Base.Implement.Data.Foldable
                     Papa.Base.Implement.Data.Function
                     Papa.Base.Implement.Data.Functor

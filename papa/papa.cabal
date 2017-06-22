@@ -39,6 +39,9 @@ library
                     , papa-semigroupoids >= 0.2.0 && < 1
                     , papa-semigroupoids-export >= 0.2.0 && < 1
                     , papa-semigroupoids-implement >= 0.2.0 && < 1
+                    , papa-x >= 0.2.0 && < 1
+                    , papa-x-export >= 0.2.0 && < 1
+                    , papa-x-implement >= 0.2.0 && < 1
                     , papa-export >= 0.2.0 && < 1
                     , papa-implement >= 0.2.0 && < 1
                    

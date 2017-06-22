@@ -3,8 +3,8 @@
 , papa-bifunctors-export, papa-bifunctors-implement, papa-export
 , papa-implement, papa-lens, papa-lens-export, papa-lens-implement
 , papa-semigroupoids, papa-semigroupoids-export
-, papa-semigroupoids-implement, QuickCheck, stdenv
-, template-haskell
+, papa-semigroupoids-implement, papa-x, papa-x-export
+, papa-x-implement, QuickCheck, stdenv, template-haskell
 }:
 mkDerivation {
   pname = "papa";
@@ -15,7 +15,7 @@ mkDerivation {
     papa-bifunctors-export papa-bifunctors-implement papa-export
     papa-implement papa-lens papa-lens-export papa-lens-implement
     papa-semigroupoids papa-semigroupoids-export
-    papa-semigroupoids-implement
+    papa-semigroupoids-implement papa-x papa-x-export papa-x-implement
   ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell

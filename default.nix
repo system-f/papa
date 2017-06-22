@@ -15,4 +15,7 @@ haskellPackages:
   papa-semigroupoids = haskellPackages.callPackage ./papa-semigroupoids { };
   papa-semigroupoids-implement = haskellPackages.callPackage ./papa-semigroupoids-implement { };
   papa-semigroupoids-export = haskellPackages.callPackage ./papa-semigroupoids-export { };
+  papa-x = haskellPackages.callPackage ./papa-x { };
+  papa-x-implement = haskellPackages.callPackage ./papa-x-implement { };
+  papa-x-export = haskellPackages.callPackage ./papa-x-export { };
 }

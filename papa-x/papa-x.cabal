@@ -1,13 +1,13 @@
-name:               papa-semigroupoids-implement
-version:            0.2.1
+name:               papa-x
+version:            0.2.0
 license:            BSD3
 license-file:       LICENSE
 author:             Tony Morris <ʇǝu˙sıɹɹoɯʇ@ןןǝʞsɐɥ>
 maintainer:         Tony Morris
-copyright:          Copyright (c) 2017, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
-synopsis:           useful `semigroupoids` functions reimplemented
+copyright:          Copyright (c) 2016, Commonwealth Scientific and Industrial Research Organisation (CSIRO) ABN 41 687 119 230.
+synopsis:           Prelude with only useful functions
 category:           Prelude
-description:        useful `semigroupoids` functions reimplemented
+description:        Prelude with only useful functions
 homepage:           https://github.com/data61/papa
 bug-reports:        https://github.com/data61/papa/issues
 cabal-version:      >= 1.10
@@ -19,7 +19,7 @@ source-repository   head
   location:         git@github.com:data61/papa.git
 
 flag                small_base
-  description:      Choose the new, split-up base package.
+  description:      Choose the new, split-up semigroupoids package.
 
 library
   default-language:
@@ -27,7 +27,8 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , semigroupoids >= 5 && < 6
+                    , papa-x-export >= 0.2.0 && < 1
+                    , papa-x-implement >= 0.2.0 && < 1
                     
   ghc-options:
                     -Wall
@@ -39,9 +40,7 @@ library
                     src
 
   exposed-modules:
-                    Papa.Semigroupoids.Implement
-                    Papa.Semigroupoids.Implement.Data.Functor.Bind
-                    Papa.Semigroupoids.Implement.Data.Semigroup.Foldable
+                    Papa.X
                     
 test-suite doctests
   type:

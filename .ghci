@@ -1,3 +1,6 @@
 :set -XNoImplicitPrelude
 :m - Prelude
 :m + Papa
+:m + Papa.Example
+:l papa-example/src/Papa/Example.hs
+

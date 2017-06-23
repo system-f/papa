@@ -6,7 +6,7 @@ module Papa.Base.Export.Control.Monad(
 
 import Control.Monad as P(
     Functor(fmap)
-  , Monad((>>=))
+  , Monad((>>=), return, (>>))
   , MonadPlus(mzero, mplus)
   , forever
   , void

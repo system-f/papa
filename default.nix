@@ -1,5 +1,6 @@
 haskellPackages:
 {
+  papa-example = haskellPackages.callPackage ./papa-example { };
   papa = haskellPackages.callPackage ./papa { };
   papa-implement = haskellPackages.callPackage ./papa-implement { };
   papa-base = haskellPackages.callPackage ./papa-base { };

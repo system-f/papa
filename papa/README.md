@@ -7,26 +7,35 @@ sub-packages:
 
 Package dependency tree:
 
-    papa
-      papa-export
-        papa-base-export
-        papa-bifunctors-export
-        papa-lens-export
-        papa-semigroupoids-export
-      papa-implement
-        papa-base-implement
-        papa-bifunctors-implement
-        papa-lens-implement
-        papa-semigroupoids-implement
-      papa-base
-        papa-base-export
-        papa-base-implement
-      papa-bifunctors
-        papa-bifunctors-export
-        papa-bifunctors-implement
-      papa-lens
-        papa-lens-export
-        papa-lens-implement
-      papa-semigroupoids
-        papa-semigroupoids-export
-        papa-semigroupoids-implement
+* **`papa`** Top-level package which exports all other packages in `papa-*`.
+
+  * **`papa-base`** Exports modules from the `base` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `base`.
+
+    *  **`papa-base-export`** Exports safe and useful functions from `base`.
+
+    *  **`papa-base-implement`** Implements safe and useful functions that depend only on `base`.
+
+  * **`papa-lens`** Exports modules from the third-party `lens` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `lens`.
+
+    *  **`papa-lens-export`** Exports safe and useful functions from `lens`.
+
+    *  **`papa-lens-implement`** Implements safe and useful functions that depend only on `lens`.
+
+  * **`papa-semigroupoids`** Exports modules from the third-party `semigroupoids` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `semigroupoids`.
+
+    *  **`papa-semigroupoids-export`** Exports safe and useful functions from `semigroupoids`.
+
+    *  **`papa-semigroupoids-implement`** Implements safe and useful functions that depend only on `semigroupoids`.
+
+  * **`papa-bifunctors`** Exports modules from the third-party `bifunctors` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `bifunctors`.
+
+    *  **`papa-bifunctors-export`** Exports safe and useful functions from `bifunctors`.
+
+    *  **`papa-bifunctors-implement`** Implements safe and useful functions that depend only on `bifunctors`.
+
+  * **`papa-x`** Exports modules from arbitrary third-party packages that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend on arbitrary third-party packages.
+
+    *  **`papa-x-export`** Exports safe and useful functions from arbitrary third-party packages.
+
+    *  **`papa-x-implement`** Implements safe and useful functions that depend on arbitrary third-party
+       packages.

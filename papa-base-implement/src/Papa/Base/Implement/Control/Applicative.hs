@@ -2,7 +2,6 @@
 
 module Papa.Base.Implement.Control.Applicative(
   const
-, return
 ) where
 
 import Control.Applicative(Applicative(pure))
@@ -14,9 +13,3 @@ const ::
 const =
   pure
 
-return ::
-  Applicative f =>
-  a
-  -> f a
-return =
-  pure

@@ -15,6 +15,8 @@ import Control.Monad as P(
   , filterM
   , foldM
   , foldM_
+  , replicateM
+  , replicateM_
   , guard
   , when
   , unless

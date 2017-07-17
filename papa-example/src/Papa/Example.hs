@@ -1,6 +1,8 @@
+{-# LANGUAGE NoImplicitPrelude #-}
+
 module Papa.Example where
 
-import Papa
+import           Papa
 
 -- |
 --
@@ -63,7 +65,7 @@ initExample =
 --
 -- >>> indexExample
 -- (Nothing,Just 'b',Nothing,Just 'a',Nothing,Nothing,Just 'c',Just 17)
-indexExample :: 
+indexExample ::
   (
     Maybe a
   , Maybe Char

@@ -2,6 +2,8 @@
 
 module Papa.Base.Implement.Control.Applicative(
   const
+, replicateA
+, replicateA_
 ) where
 
 import Control.Applicative(Applicative(pure))

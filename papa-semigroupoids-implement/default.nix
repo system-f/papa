@@ -1,11 +1,11 @@
 { mkDerivation, base, directory, doctest, filepath, QuickCheck
-, semigroupoids, stdenv, template-haskell
+, semigroups, semigroupoids, stdenv, template-haskell
 }:
 mkDerivation {
   pname = "papa-semigroupoids-implement";
   version = "0.2.0";
   src = ./.;
-  libraryHaskellDepends = [ base semigroupoids ];
+  libraryHaskellDepends = [ base semigroups semigroupoids ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];

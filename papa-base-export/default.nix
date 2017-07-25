@@ -1,11 +1,11 @@
 { mkDerivation, base, directory, doctest, filepath, QuickCheck
-, stdenv, template-haskell
+, semigroups, stdenv, template-haskell 
 }:
 mkDerivation {
   pname = "papa-base-export";
   version = "0.2.0";
   src = ./.;
-  libraryHaskellDepends = [ base ];
+  libraryHaskellDepends = [ base semigroups ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];

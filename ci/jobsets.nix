@@ -5,7 +5,7 @@
     EOF
     cat > $out <<EOF
     {
-        "fp-course": {
+        "papa": {
             "enabled": 1,
             "hidden": false,
             "description": "Papa",
@@ -17,7 +17,7 @@
             "emailoverride": "",
             "keepnr": 5,
             "inputs": {
-                "papa": { "type": "git", "value": "https://github.com/data61/papa.git qfpl", "emailresponsible": false },
+                "papa": { "type": "git", "value": "https://github.com/qfpl/papa.git master", "emailresponsible": false },
                 "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs.git release-17.03", "emailresponsible": false }
             }
         }

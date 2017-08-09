@@ -15,6 +15,14 @@ Package dependency tree:
 
     *  **`papa-base-implement`** Implements safe and useful functions that depend only on `base`.
 
+  * **`papa-bifunctors`** Exports modules from the third-party `bifunctors` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `bifunctors`.
+
+    *  **`papa-bifunctors-export`** Exports safe and useful functions from `bifunctors`.
+
+    *  **`papa-bifunctors-implement`** Implements safe and useful functions that depend only on `bifunctors`.
+
+  * **`papa-example`** Example use of the `papa` packages.
+  
   * **`papa-lens`** Exports modules from the third-party `lens` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `lens`.
 
     *  **`papa-lens-export`** Exports safe and useful functions from `lens`.
@@ -26,12 +34,6 @@ Package dependency tree:
     *  **`papa-semigroupoids-export`** Exports safe and useful functions from `semigroupoids`.
 
     *  **`papa-semigroupoids-implement`** Implements safe and useful functions that depend only on `semigroupoids`.
-
-  * **`papa-bifunctors`** Exports modules from the third-party `bifunctors` package that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend only on `bifunctors`.
-
-    *  **`papa-bifunctors-export`** Exports safe and useful functions from `bifunctors`.
-
-    *  **`papa-bifunctors-implement`** Implements safe and useful functions that depend only on `bifunctors`.
 
   * **`papa-x`** Exports modules from arbitrary third-party packages that are safe and useful to have re-exported into default scope. Implements useful, general library functions that depend on arbitrary third-party packages.
 

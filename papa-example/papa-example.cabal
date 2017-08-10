@@ -15,7 +15,7 @@ homepage:           https://github.com/qfpl/papa
 bug-reports:        https://github.com/qfpl/papa/issues
 cabal-version:      >= 1.10
 build-type:         Custom
-extra-source-files: changelog
+extra-source-files: changelog.md
 
 source-repository   head
   type:             git

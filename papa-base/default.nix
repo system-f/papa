@@ -4,7 +4,7 @@
 }:
 mkDerivation {
   pname = "papa-base";
-  version = "0.2.0";
+  version = "0.3.0";
   src = ./.;
   libraryHaskellDepends = [
     base papa-base-export papa-base-implement
@@ -12,7 +12,7 @@ mkDerivation {
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];
-  homepage = "https://github.com/data61/papa-base";
+  homepage = "https://github.com/qfpl/papa";
   description = "Prelude with only useful functions";
   license = stdenv.lib.licenses.bsd3;
 }

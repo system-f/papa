@@ -1,15 +1,16 @@
-{ mkDerivation, base, directory, doctest, filepath, QuickCheck
-, semigroups, stdenv, template-haskell, papa-base-export
+{ mkDerivation, base, directory, doctest, filepath
+, papa-base-export, QuickCheck, semigroups, stdenv
+, template-haskell
 }:
 mkDerivation {
   pname = "papa-base-implement";
-  version = "0.2.0";
+  version = "0.3.0";
   src = ./.;
-  libraryHaskellDepends = [ base semigroups papa-base-export ];
+  libraryHaskellDepends = [ base papa-base-export semigroups ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];
-  homepage = "https://github.com/data61/papa-base-implement";
+  homepage = "https://github.com/qfpl/papa";
   description = "Useful base functions reimplemented";
   license = stdenv.lib.licenses.bsd3;
 }

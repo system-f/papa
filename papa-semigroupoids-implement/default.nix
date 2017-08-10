@@ -1,15 +1,15 @@
 { mkDerivation, base, directory, doctest, filepath, QuickCheck
-, semigroups, semigroupoids, stdenv, template-haskell
+, semigroupoids, semigroups, stdenv, template-haskell
 }:
 mkDerivation {
   pname = "papa-semigroupoids-implement";
-  version = "0.2.0";
+  version = "0.3.0";
   src = ./.;
-  libraryHaskellDepends = [ base semigroups semigroupoids ];
+  libraryHaskellDepends = [ base semigroupoids semigroups ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];
-  homepage = "https://github.com/data61/papa-semigroupoids-implement";
-  description = "useful `bifunctors` functions reimplemented";
+  homepage = "https://github.com/qfpl/papa";
+  description = "useful `semigroupoids` functions reimplemented";
   license = stdenv.lib.licenses.bsd3;
 }

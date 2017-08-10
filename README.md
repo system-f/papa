@@ -1,3 +1,5 @@
+![Data61](http://i.imgur.com/uZnp9ke.png)
+
 # `papa`
 
 Top-level package for general libraries. To import all modules in all

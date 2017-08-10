@@ -3,13 +3,13 @@
 }:
 mkDerivation {
   pname = "papa-lens-export";
-  version = "0.2.0";
+  version = "0.3.0";
   src = ./.;
   libraryHaskellDepends = [ base lens ];
   testHaskellDepends = [
     base directory doctest filepath QuickCheck template-haskell
   ];
-  homepage = "https://github.com/data61/papa-lens-export";
+  homepage = "https://github.com/qfpl/papa";
   description = "export useful functions from `lens`";
   license = stdenv.lib.licenses.bsd3;
 }

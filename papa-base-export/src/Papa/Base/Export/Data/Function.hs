@@ -1,10 +1,13 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Function(
-  module P
+    ($)
+  , (&)
+  , fix
+  , on
 ) where
 
-import Data.Function as P(
+import Data.Function (
     ($)
   , (&)
   , fix

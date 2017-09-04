@@ -1,8 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Semigroupoids.Implement( 
-  module P
+  module Papa.Semigroupoids.Implement.Data.Functor.Bind,
+  module Papa.Semigroupoids.Implement.Data.Semigroup.Foldable
 ) where
 
-import Papa.Semigroupoids.Implement.Data.Functor.Bind as P
-import Papa.Semigroupoids.Implement.Data.Semigroup.Foldable as P
+import Papa.Semigroupoids.Implement.Data.Functor.Bind
+import Papa.Semigroupoids.Implement.Data.Semigroup.Foldable

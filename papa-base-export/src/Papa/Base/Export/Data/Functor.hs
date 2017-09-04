@@ -1,10 +1,13 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Functor(
-  module P
+    Functor(fmap, (<$))
+  , ($>)
+  , (<$>)
+  , void
 ) where
 
-import Data.Functor as P(
+import Data.Functor (
     Functor(fmap, (<$))
   , ($>)
   , (<$>)

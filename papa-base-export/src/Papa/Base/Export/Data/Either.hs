@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Either(
-  module P
+    Either(Left, Right)
+  , either
+  , isLeft
+  , isRight
+  , partitionEithers
 ) where
 
-import Data.Either as P(
+import Data.Either (
     Either(Left, Right)
   , either
   , isLeft

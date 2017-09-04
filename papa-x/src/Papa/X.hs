@@ -1,8 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.X(
-  module P
+  module Papa.X.Export,
+  module Papa.X.Implement
 ) where
 
-import Papa.X.Export as P
-import Papa.X.Implement as P
+import Papa.X.Export
+import Papa.X.Implement

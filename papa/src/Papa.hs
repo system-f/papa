@@ -1,10 +1,13 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa(
-  module P
+  module Papa.Base,
+  module Papa.Bifunctors,
+  module Papa.Lens,
+  module Papa.Semigroupoids
 ) where
 
-import Papa.Base as P
-import Papa.Bifunctors as P
-import Papa.Lens as P
-import Papa.Semigroupoids as P
+import Papa.Base
+import Papa.Bifunctors
+import Papa.Lens
+import Papa.Semigroupoids

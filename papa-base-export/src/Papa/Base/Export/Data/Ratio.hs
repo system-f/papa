@@ -1,10 +1,15 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Ratio(
-  module P
+    Ratio
+  , Rational
+  , (%)
+  , numerator
+  , denominator
+  , approxRational
 ) where
 
-import Data.Ratio as P(
+import Data.Ratio (
     Ratio
   , Rational
   , (%)

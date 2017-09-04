@@ -1,9 +1,10 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Bifunctors(
-  module P
+    module Papa.Bifunctors.Export,
+    module Papa.Bifunctors.Implement
 ) where
 
-import Papa.Bifunctors.Export as P
-import Papa.Bifunctors.Implement as P
+import Papa.Bifunctors.Export
+import Papa.Bifunctors.Implement
 

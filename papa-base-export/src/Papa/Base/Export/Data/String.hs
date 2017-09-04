@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.String(
-  module P
+    String
+  , lines
+  , words
+  , unlines
+  , unwords
 ) where
 
-import Data.String as P(
+import Data.String (
     String
   , lines
   , words

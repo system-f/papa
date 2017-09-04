@@ -1,8 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Lens(
-  module P
+  module Papa.Lens.Export,
+  module Papa.Lens.Implement
 ) where
 
-import Papa.Lens.Export as P
-import Papa.Lens.Implement as P
+import Papa.Lens.Export
+import Papa.Lens.Implement

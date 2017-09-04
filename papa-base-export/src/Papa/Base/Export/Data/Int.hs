@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Int(
-  module P
+    Int
+  , Int8
+  , Int16
+  , Int32
+  , Int64
 ) where
 
-import Data.Int as P(
+import Data.Int (
     Int
   , Int8
   , Int16

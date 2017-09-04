@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Bool(
-  module P
+    (&&)
+  , (||)
+  , not
+  , otherwise
+  , bool
 ) where
 
-import Data.Bool as P(
+import Data.Bool (
     (&&)
   , (||)
   , not

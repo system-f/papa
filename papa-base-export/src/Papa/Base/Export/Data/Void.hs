@@ -1,10 +1,12 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Void(
-  module P
+    Void
+  , absurd
+  , vacuous
 ) where
 
-import Data.Void as P(
+import Data.Void (
     Void
   , absurd
   , vacuous

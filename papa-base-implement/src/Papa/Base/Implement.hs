@@ -1,14 +1,21 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Implement(
-  module P
+    module Papa.Base.Implement.Control.Applicative,
+    module Papa.Base.Implement.Control.Monad,
+    module Papa.Base.Implement.Data.Foldable,
+    module Papa.Base.Implement.Data.Functor,
+    module Papa.Base.Implement.Data.Function,
+    module Papa.Base.Implement.Data.List,
+    module Papa.Base.Implement.Data.Monoid,
+    module Papa.Base.Implement.Data.Traversable
 ) where
 
-import Papa.Base.Implement.Control.Applicative as P
-import Papa.Base.Implement.Control.Monad as P
-import Papa.Base.Implement.Data.Foldable as P
-import Papa.Base.Implement.Data.Functor as P
-import Papa.Base.Implement.Data.Function as P
-import Papa.Base.Implement.Data.List as P
-import Papa.Base.Implement.Data.Monoid as P
-import Papa.Base.Implement.Data.Traversable as P
+import Papa.Base.Implement.Control.Applicative
+import Papa.Base.Implement.Control.Monad
+import Papa.Base.Implement.Data.Foldable
+import Papa.Base.Implement.Data.Functor
+import Papa.Base.Implement.Data.Function
+import Papa.Base.Implement.Data.List
+import Papa.Base.Implement.Data.Monoid
+import Papa.Base.Implement.Data.Traversable

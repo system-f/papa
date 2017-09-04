@@ -1,9 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Control.Category(
-  module P
+    Category(id, (.))
 ) where
 
-import Control.Category as P(
+import Control.Category (
     Category(id, (.))
   )

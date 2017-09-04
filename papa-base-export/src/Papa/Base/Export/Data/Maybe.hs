@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Maybe(
-  module P
+    Maybe(Nothing, Just)
+  , maybe
+  , isJust
+  , isNothing
+  , fromMaybe
 ) where
 
-import Data.Maybe as P(
+import Data.Maybe (
     Maybe(Nothing, Just)
   , maybe
   , isJust

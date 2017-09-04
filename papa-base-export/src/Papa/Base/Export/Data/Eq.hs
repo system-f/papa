@@ -1,10 +1,10 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Eq(
-  module P
+    Eq((==), (/=))
 ) where
 
-import Data.Eq as P(
+import Data.Eq (
     Eq((==), (/=))
   )
 

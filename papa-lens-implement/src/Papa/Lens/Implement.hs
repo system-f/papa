@@ -1,9 +1,11 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Lens.Implement( 
-  module P
+    module Papa.Lens.Implement.Data.Collapse,
+    module Papa.Lens.Implement.Data.List,
+    module Papa.Lens.Implement.Data.Tuple
 ) where
 
-import Papa.Lens.Implement.Data.Collapse as P
-import Papa.Lens.Implement.Data.List as P
-import Papa.Lens.Implement.Data.Tuple as P
+import Papa.Lens.Implement.Data.Collapse
+import Papa.Lens.Implement.Data.List
+import Papa.Lens.Implement.Data.Tuple

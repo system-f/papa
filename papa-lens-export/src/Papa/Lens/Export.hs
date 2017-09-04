@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Papa.Lens.Export( 
+module Papa.Lens.Export(
   module P
 ) where
 

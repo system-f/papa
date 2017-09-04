@@ -1,8 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Semigroupoids(
-  module P
+    module Papa.Semigroupoids.Export,
+    module Papa.Semigroupoids.Implement
 ) where
 
-import Papa.Semigroupoids.Export as P
-import Papa.Semigroupoids.Implement as P
+import Papa.Semigroupoids.Export
+import Papa.Semigroupoids.Implement

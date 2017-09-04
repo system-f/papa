@@ -1,10 +1,14 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Base.Export.Data.Traversable(
-  module P
+    Traversable(traverse, sequenceA)
+  , for
+  , mapAccumL
+  , fmapDefault
+  , foldMapDefault
 ) where
 
-import Data.Traversable as P(
+import Data.Traversable (
     Traversable(traverse, sequenceA)
   , for
   , mapAccumL

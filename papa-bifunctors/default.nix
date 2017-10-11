@@ -3,7 +3,7 @@
 }:
 mkDerivation {
   pname = "papa-bifunctors";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [
     base papa-bifunctors-export papa-bifunctors-implement

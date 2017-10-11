@@ -1,7 +1,7 @@
 { mkDerivation, base, semigroups, stdenv }:
 mkDerivation {
   pname = "papa-base-export";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [ base semigroups ];
   homepage = "https://github.com/qfpl/papa";

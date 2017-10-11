@@ -2,7 +2,7 @@
 }:
 mkDerivation {
   pname = "papa-lens";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [
     base papa-lens-export papa-lens-implement

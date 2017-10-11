@@ -1,5 +1,5 @@
 name:               papa-example
-version:            0.3.0
+version:            0.3.1
 license:            BSD3
 license-file:       LICENCE
 author:             Queensland Functional Programming Lab <oᴉ˙ldɟb@llǝʞsɐɥ>
@@ -30,22 +30,22 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa >= 0.3.0 && < 1
-                    , papa-base >= 0.3.0 && < 1
-                    , papa-base-export >= 0.3.0 && < 1
-                    , papa-base-implement >= 0.3.0 && < 1
-                    , papa-bifunctors >= 0.3.0 && < 1
-                    , papa-bifunctors-export >= 0.3.0 && < 1
-                    , papa-bifunctors-implement >= 0.3.0 && < 1
-                    , papa-lens >= 0.3.0 && < 1
-                    , papa-lens-export >= 0.3.0 && < 1
-                    , papa-lens-implement >= 0.3.0 && < 1
-                    , papa-semigroupoids >= 0.3.0 && < 1
-                    , papa-semigroupoids-export >= 0.3.0 && < 1
-                    , papa-semigroupoids-implement >= 0.3.0 && < 1
-                    , papa-x >= 0.3.0 && < 1
-                    , papa-x-export >= 0.3.0 && < 1
-                    , papa-x-implement >= 0.3.0 && < 1
+                    , papa >= 0.3.1 && < 1
+                    , papa-base >= 0.3.1 && < 1
+                    , papa-base-export >= 0.3.1 && < 1
+                    , papa-base-implement >= 0.3.1 && < 1
+                    , papa-bifunctors >= 0.3.1 && < 1
+                    , papa-bifunctors-export >= 0.3.1 && < 1
+                    , papa-bifunctors-implement >= 0.3.1 && < 1
+                    , papa-lens >= 0.3.1 && < 1
+                    , papa-lens-export >= 0.3.1 && < 1
+                    , papa-lens-implement >= 0.3.1 && < 1
+                    , papa-semigroupoids >= 0.3.1 && < 1
+                    , papa-semigroupoids-export >= 0.3.1 && < 1
+                    , papa-semigroupoids-implement >= 0.3.1 && < 1
+                    , papa-x >= 0.3.1 && < 1
+                    , papa-x-export >= 0.3.1 && < 1
+                    , papa-x-implement >= 0.3.1 && < 1
                     
   ghc-options:
                     -Wall

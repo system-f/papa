@@ -1,7 +1,7 @@
 { mkDerivation, base, bifunctors, stdenv }:
 mkDerivation {
   pname = "papa-bifunctors-export";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [ base bifunctors ];
   homepage = "https://github.com/qfpl/papa";

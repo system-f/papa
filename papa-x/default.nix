@@ -1,7 +1,7 @@
 { mkDerivation, base, papa-x-export, papa-x-implement, stdenv }:
 mkDerivation {
   pname = "papa-x";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [ base papa-x-export papa-x-implement ];
   homepage = "https://github.com/qfpl/papa";

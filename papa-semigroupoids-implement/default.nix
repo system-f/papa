@@ -1,7 +1,7 @@
 { mkDerivation, base, semigroupoids, semigroups, stdenv }:
 mkDerivation {
   pname = "papa-semigroupoids-implement";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [ base semigroupoids semigroups ];
   homepage = "https://github.com/qfpl/papa";

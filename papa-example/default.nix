@@ -7,7 +7,7 @@
 }:
 mkDerivation {
   pname = "papa-example";
-  version = "0.3.0";
+  version = "0.3.1";
   src = ./.;
   libraryHaskellDepends = [
     base papa papa-base papa-base-export papa-base-implement

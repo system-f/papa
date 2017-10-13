@@ -1,3 +1,7 @@
+0.3.1
+
+* Remove doctests test target and setup
+
 0.2.1
 
 * `collapse[N]` and `map[N]` functions.

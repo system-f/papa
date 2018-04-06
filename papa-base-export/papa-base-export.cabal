@@ -1,5 +1,5 @@
 name:               papa-base-export
-version:            0.3.1
+version:            0.4
 license:            BSD3
 license-file:       LICENCE
 author:             Queensland Functional Programming Lab <oᴉ˙ldɟb@llǝʞsɐɥ>
@@ -20,9 +20,6 @@ extra-source-files: changelog.md
 source-repository   head
   type:             git
   location:         git@github.com:qfpl/papa.git
-
-flag                small_base
-  description:      Choose the new, split-up base package.
 
 library
   default-language:

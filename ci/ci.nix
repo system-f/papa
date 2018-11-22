@@ -1,5 +1,5 @@
 { supportedSystems ? ["x86_64-linux"]
-, supportedCompilers ? [ "ghc7103" "ghc802" "ghc821" ] 
+, supportedCompilers ? [ "ghc802" "ghc822" "ghc843" ] 
 , papaPackages ? [
     "papa-example"
     "papa"
@@ -31,7 +31,7 @@ let
       pkgs.lib.concatMap (papaPackage: 
         pkgs.lib.concatMap (compiler: 
           pkgs.lib.concatMap (system: 
-            [{name = "haskell.packages." + compiler + "." + papaPackage + "." + system ; value = {inherit papaPackage compiler system;};}]
+            [{name = "haskell-packages-" + compiler + "-" + papaPackage + "-" + system ; value = {inherit papaPackage compiler system;};}]
           ) supportedSystems
         ) supportedCompilers
       ) papaPackages

@@ -1,4 +1,4 @@
-![Data61](http://i.imgur.com/uZnp9ke.png)
+![CSIRO's Data61 Logo](https://raw.githubusercontent.com/qfpl/assets/master/data61-transparent-bg.png)
 
 # `papa`
 

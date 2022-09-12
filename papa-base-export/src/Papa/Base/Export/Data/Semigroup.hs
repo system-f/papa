@@ -17,8 +17,6 @@ module Papa.Base.Export.Data.Semigroup(
   , Any(getAny)
   , Sum(getSum)
   , Product(getProduct)
-  , Option(getOption)
-  , option
   , diff
   , cycle1
   , WrappedMonoid(unwrapMonoid)
@@ -44,8 +42,6 @@ import Data.Semigroup (
   , Any(getAny)
   , Sum(getSum)
   , Product(getProduct)
-  , Option(getOption)
-  , option
   , diff
   , cycle1
   , WrappedMonoid(unwrapMonoid)

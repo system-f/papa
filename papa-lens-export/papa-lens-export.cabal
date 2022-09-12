@@ -30,7 +30,7 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , lens >= 4 && < 5
+                    , lens >= 4 && < 6
                     
   ghc-options:
                     -Wall

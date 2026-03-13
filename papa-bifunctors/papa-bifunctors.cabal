@@ -30,9 +30,8 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa-bifunctors-export >= 0.3.1 && < 1
-                    , papa-bifunctors-implement >= 0.3.1 && < 1
-                    
+                    , bifunctors >= 5 && < 6
+
   ghc-options:
                     -Wall
 
@@ -44,3 +43,6 @@ library
 
   exposed-modules:
                     Papa.Bifunctors
+                    Papa.Bifunctors.Export
+                    Papa.Bifunctors.Implement
+                    Papa.Bifunctors.Implement.Data.Bifoldable

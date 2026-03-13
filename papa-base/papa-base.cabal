@@ -30,9 +30,8 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , papa-base-export >= 0.3.1 && < 1
-                    , papa-base-implement >= 0.3.1 && < 1
-                    
+                    , semigroups >= 0.18
+
   ghc-options:
                     -Wall
 
@@ -44,3 +43,35 @@ library
 
   exposed-modules:
                     Papa.Base
+                    Papa.Base.Export
+                    Papa.Base.Export.Control.Applicative
+                    Papa.Base.Export.Control.Category
+                    Papa.Base.Export.Control.Monad
+                    Papa.Base.Export.Data.Bool
+                    Papa.Base.Export.Data.Char
+                    Papa.Base.Export.Data.Either
+                    Papa.Base.Export.Data.Eq
+                    Papa.Base.Export.Data.Foldable
+                    Papa.Base.Export.Data.Function
+                    Papa.Base.Export.Data.Functor
+                    Papa.Base.Export.Data.Int
+                    Papa.Base.Export.Data.List
+                    Papa.Base.Export.Data.List.NonEmpty
+                    Papa.Base.Export.Data.Maybe
+                    Papa.Base.Export.Data.Monoid
+                    Papa.Base.Export.Data.Ord
+                    Papa.Base.Export.Data.Ratio
+                    Papa.Base.Export.Data.Semigroup
+                    Papa.Base.Export.Data.String
+                    Papa.Base.Export.Data.Traversable
+                    Papa.Base.Export.Data.Void
+                    Papa.Base.Export.Prelude
+                    Papa.Base.Implement
+                    Papa.Base.Implement.Control.Applicative
+                    Papa.Base.Implement.Control.Monad
+                    Papa.Base.Implement.Data.Foldable
+                    Papa.Base.Implement.Data.Function
+                    Papa.Base.Implement.Data.Functor
+                    Papa.Base.Implement.Data.List
+                    Papa.Base.Implement.Data.Monoid
+                    Papa.Base.Implement.Data.Traversable

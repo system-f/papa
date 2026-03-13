@@ -30,7 +30,7 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , semigroupoids >= 5 && < 6
+                    , semigroupoids >= 5 && < 7
                     , semigroups >= 0.18
 
   ghc-options:

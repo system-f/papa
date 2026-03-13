@@ -30,7 +30,7 @@ library
 
   build-depends:
                     base >= 4.8 && < 5
-                    , bifunctors >= 5 && < 6
+                    , bifunctors >= 5 && < 7
 
   ghc-options:
                     -Wall

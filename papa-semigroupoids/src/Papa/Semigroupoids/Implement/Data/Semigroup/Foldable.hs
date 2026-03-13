@@ -1,3 +1,4 @@
+{-# OPTIONS_GHC -Wall #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Papa.Semigroupoids.Implement.Data.Semigroup.Foldable(
